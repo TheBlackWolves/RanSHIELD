@@ -2,29 +2,39 @@
 Start to crash the system
 
 AIM:
-The primary aim of this project is to analysis of ransomware attack and provide recovery methods to the infected system to recover the data.
+          The primary aim of this project is to analysis of ransomware attack and provide recovery methods to the infected system to recover the data.
+
+
 OBJECTIVES:
-This idea the project is about what ransomware attacks are all about by understanding how they work which influence their consequences and counteractions against them. The work will largely center on studying conduct patterns as well as means applied during such attacks together with finding weak points that can be used by these forms of assault; moreover, we will also look into ways to recover from these situations. The final objective is to come up with a solid system that would help in preventing ransomware occurrences, minimizing losses caused by them and restore systems and data that have been negatively affected.
+          This idea the project is about what ransomware attacks are all about by understanding how they work which influence their consequences and counteractions against them. The work will largely center on studying conduct patterns as well as means applied during such attacks together with finding weak points that can be used by these forms of assault; moreover, we will also look into ways to recover from these situations. The final objective is to come up with a solid system that would help in preventing ransomware occurrences, minimizing losses caused by them and restore systems and data that have been negatively affected.
 
 
 
 METHODOLOGY
+
 Planning:
-          Gather Requirements:
+
+Gather Requirements:
+
 A laptop to run the Host operating System
 Virtual box
 Windows virtual machine (Target system)
 Kali Linux virtual machine (Attacker System)
 A laptop to run the server for storing keys
 Ransomware for testing
-          Research Existing Tools:
+
+Research Existing Tools:
+
 NextronSystem - ransomware-simulator (GitHub)
 Leeberg - CashCatRansomwareSimulator (GitHub)
 Marmos91 - ransomware (GitHub)
 kh4sh3i - Ransomware (GitHub)
 lawndoc - RanSim (GitHub)
+
 Implementation:
+
 Set Up the Development Environment:
+
 I. Setup the Host Laptop
     1. Install the Host Operating System
     2. Make sure host OS is properly installed and updated.
