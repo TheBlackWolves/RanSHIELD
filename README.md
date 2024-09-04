@@ -9,11 +9,13 @@ win32api: Windows-specific API interactions.
 tkinter: The standard Python GUI toolkit, used alongside customtkinter.
 watchdog: Used for monitoring file system events.
 collections.deque: For managing data collections.
+
 2. System Information Functions
 The script defines functions like get_system_info() and get_cpu_usage() to retrieve and return system details:
 
 get_system_info(): Returns system details like OS type, node name, version, machine architecture, processor, and IPv4 address.
 get_cpu_usage(): Returns CPU usage percentage and the number of logical cores.
+
 3. GUI Setup and Interaction
 The presence of customtkinter, tkinter, and simpledialog indicates that the script likely includes a graphical user interface. The GUI may be used to interact with users, display system information, and possibly take action based on user inputs.
 
