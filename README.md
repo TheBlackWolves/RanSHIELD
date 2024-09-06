@@ -1,29 +1,59 @@
-1. Imports and Libraries
-The script imports a wide range of libraries, including:
+# ranSHIELD: Anti-Ransomware Tool
 
-customtkinter: Likely used for creating a custom user interface (UI).
-subprocess, platform, socket, psutil: Utilized for system and network information retrieval.
-webbrowser, ctypes, os: Used for interacting with the operating system and external resources.
-cryptography.fernet: Indicates encryption or decryption functionality.
-win32api: Windows-specific API interactions.
-tkinter: The standard Python GUI toolkit, used alongside customtkinter.
-watchdog: Used for monitoring file system events.
-collections.deque: For managing data collections.
 
-2. System Information Functions
-The script defines functions like get_system_info() and get_cpu_usage() to retrieve and return system details:
+Overview: 
+          ranSHIELD is a powerful Python-based application designed to protect your system from ransomware attacks. By combining multiple monitoring tools and preventative measures, ranSHIELD offers a comprehensive defense against ransomware, ensuring the safety of your files, processes, and network. The tool is built using Python's CustomTkinter framework for a user-friendly interface.
 
-get_system_info(): Returns system details like OS type, node name, version, machine architecture, processor, and IPv4 address.
-get_cpu_usage(): Returns CPU usage percentage and the number of logical cores.
+Key Features:
 
-3. GUI Setup and Interaction
-The presence of customtkinter, tkinter, and simpledialog indicates that the script likely includes a graphical user interface. The GUI may be used to interact with users, display system information, and possibly take action based on user inputs.
+File Monitor:
 
-4. File System Monitoring
-The inclusion of watchdog libraries suggests that the script monitors changes in the file system. This is typically used to trigger actions when files are created, modified, or deleted in specified directories.
+Allows users to specify directories to monitor.
+The tool regularly watches the files within the specified path.
+If any files are encrypted, ranSHIELD immediately commands the system to shut down, preventing further damage.
 
-5. Encryption and Security
-The script imports Fernet from the cryptography library, which suggests that there is encryption or decryption functionality present. This could be used to protect data or communications within the script.
+Process Monitor:
 
-6. Potential OS-Specific Operations
-The usage of win32api and ctypes hints that the script might perform operations specific to the Windows operating
+Continuously monitors system processes.
+If more than 10 files are encrypted within 2 seconds, the tool automatically identifies and kills the process responsible for the encryption, then shuts down the system.
+
+Network Shield:
+
+When enabled, this feature monitors network activities for signs of rapid encryption.
+Upon detecting a potential ransomware attack, it disables the system's network connection and alerts the user, minimizing data loss or theft.
+
+Authorized Installation:
+
+Prevents unauthorized software installation by requiring a password when new applications are being installed.
+Protects against malicious software being installed without the user’s consent.
+
+Extortion Prevention:
+
+Encryption:
+
+ranSHIELD provides the ability to encrypt your own data, ensuring that sensitive information is protected.
+This method prevents hackers from accessing and leaking your private data during an extortion attempt.
+
+Decryption:
+
+Users can decrypt their data using a password-protected decryption tool.
+This feature is useful when you are in a secure environment and want to access your encrypted data.
+
+Additional Features:
+
+Status Menu: Displays system information, including monitoring status and other relevant details.
+
+About Menu: Provides a link to the ranSHIELD GitHub page for updates and more information.
+
+Important Note: Never open ransomware files on your local system, as doing so may lead to encryption of your files. ranSHIELD offers proactive defense, but user vigilance is critical.
+
+Technology Stack:
+
+Developed using Python
+UI created with CustomTkinter to provide a modern and responsive interface.
+
+How to Use:
+
+First, run the "app" file to launch the user interface.
+Configure monitoring settings, enable protection, and rest assured that ranSHIELD will monitor your system in real time.
+ranSHIELD offers a blend of real-time protection, proactive data encryption, and user-friendly controls, making it an essential tool for anyone looking to secure their system against ransomware threats.
